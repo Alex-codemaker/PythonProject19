@@ -1,16 +1,23 @@
-# This is a sample Python script.
-
-# Press ⌃R to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+def summa(n):
+    if n == 0:
+        return 0
+    else:
+        return n + summa(n - 1)
+print(summa(5))
+#def recursion():
+    #recursion()
+#print(recursion())
+stack = []
+stack.append(1)
+print('Добавили элемент' , stack)
+stack.append(2)
+print('Добавили элемент' , stack)
+stack.append(3)
+print('Добавили элемент' , stack)
+print(stack)
+stack.pop()
+print('Убрали элемент', stack)
+stack.pop()
+print('Убрали элемент', stack)
+stack.pop()
+print('Убрали элемент', stack)
